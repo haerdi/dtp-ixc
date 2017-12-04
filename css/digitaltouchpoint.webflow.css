@@ -26,6 +26,8 @@
 }
 
 .hero-section.slide1 {
+  position: static;
+  overflow: visible;
   height: 800px;
   background-color: transparent;
   background-image: none;
@@ -57,6 +59,17 @@
   color: #fff;
 }
 
+.navlink.w--current {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-style: none;
+  border-width: 3px;
+  border-color: rgba(48, 134, 41, .89);
+  border-radius: 8px;
+}
+
 .navlink.w--current:hover {
   color: #fff;
 }
@@ -81,6 +94,7 @@
   position: static;
   padding-top: 220px;
   padding-left: 0px;
+  border-right-color: rgba(48, 134, 41, .81);
 }
 
 .hero-subheading {
@@ -159,9 +173,14 @@
   margin-bottom: 0px;
   padding-top: 0px;
   font-family: Righteous, sans-serif;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 35px;
+  line-height: 45px;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.heading-2.mobile:hover {
+  text-decoration: underline;
 }
 
 .container-6 {
@@ -1378,14 +1397,15 @@
 }
 
 .slider {
+  position: static;
   height: 700px;
 }
 
 .slide {
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .12), rgba(0, 0, 0, .12)), url('../images/Lok-Baintan-Floating-Market-on-the-Martapura-River-in-Indonesia-©-Fauzan-Mauddin-Solent-News-REX-S-wallpaper-wp6407341.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .12), rgba(0, 0, 0, .12)), url('../images/Lok-Baintan-Floating-Market-on-the-Martapura-River-in-Indonesia-©-Fauzan-Mauddin-Solent-News-REX-S-wallpaper-wp6407341.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
+  background-image: -webkit-linear-gradient(41deg, rgba(0, 0, 0, .11), rgba(48, 134, 41, .26)), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .33), rgba(0, 0, 0, .33)), url('../images/Lok-Baintan-Floating-Market-on-the-Martapura-River-in-Indonesia-©-Fauzan-Mauddin-Solent-News-REX-S-wallpaper-wp6407341.jpg');
+  background-image: linear-gradient(49deg, rgba(0, 0, 0, .11), rgba(48, 134, 41, .26)), linear-gradient(180deg, rgba(0, 0, 0, .33), rgba(0, 0, 0, .33)), url('../images/Lok-Baintan-Floating-Market-on-the-Martapura-River-in-Indonesia-©-Fauzan-Mauddin-Solent-News-REX-S-wallpaper-wp6407341.jpg');
+  background-position: 0px 0px, 0px 0px, 50% 50%;
+  background-size: auto, auto, cover;
 }
 
 .slide.slide-2-baru {
@@ -1396,8 +1416,8 @@
 }
 
 .slide-2 {
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .04), rgba(0, 0, 0, .04)), url('../images/119e3cdda599199912797dfa76b0abeb-p-1080.jpeg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .04), rgba(0, 0, 0, .04)), url('../images/119e3cdda599199912797dfa76b0abeb-p-1080.jpeg');
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03)), url('../images/119e3cdda599199912797dfa76b0abeb-p-1080.jpeg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03)), url('../images/119e3cdda599199912797dfa76b0abeb-p-1080.jpeg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -1409,6 +1429,14 @@
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
+}
+
+.slide-2.combo1 {
+  background-image: -webkit-linear-gradient(270deg, rgba(60, 179, 113, .08), rgba(60, 179, 113, .08)), url('../images/119e3cdda599199912797dfa76b0abeb-p-1080.jpeg');
+  background-image: linear-gradient(180deg, rgba(60, 179, 113, .08), rgba(60, 179, 113, .08)), url('../images/119e3cdda599199912797dfa76b0abeb-p-1080.jpeg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
 }
 
 .text-block-4 {
@@ -2309,7 +2337,7 @@
   background-image: -webkit-linear-gradient(270deg, rgba(255, 136, 6, .99), rgba(255, 136, 6, .99));
   background-image: linear-gradient(180deg, rgba(255, 136, 6, .99), rgba(255, 136, 6, .99));
   color: #fff;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .heading-17.ban {
@@ -2387,7 +2415,16 @@
 }
 
 .link-12 {
+  -webkit-transition: font-size 400ms ease;
+  transition: font-size 400ms ease;
   text-decoration: none;
+}
+
+.link-12:hover {
+  -webkit-transform: perspective(1413px);
+  transform: perspective(1413px);
+  color: #0052ff;
+  font-weight: 700;
 }
 
 .list-item-9 {
@@ -2483,6 +2520,15 @@
   padding-right: 30px;
   padding-left: 50px;
   text-align: left;
+}
+
+.judul-kajian {
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+
+.judul-kajian:hover {
+  color: #0052ff;
 }
 
 @media (max-width: 991px) {
@@ -2604,6 +2650,9 @@
   .end-section.all {
     margin-top: 0px;
   }
+  .end-section.all.tes {
+    margin-top: 1200px;
+  }
   .column-7 {
     top: 0px;
     right: 0px;
@@ -2626,6 +2675,9 @@
   .paragraph-ixc1 {
     padding-top: 20px;
   }
+  .content-home {
+    margin-bottom: 125px;
+  }
   .column-12 {
     text-align: center;
   }
@@ -2636,6 +2688,7 @@
     text-align: center;
   }
   .column-16 {
+    margin-bottom: 10px;
     padding-right: 0px;
     padding-left: 0px;
     text-align: center;
@@ -2776,7 +2829,8 @@
   }
   .heading-14 {
     margin-left: 0px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 15px;
     font-weight: 400;
     text-align: center;
   }
